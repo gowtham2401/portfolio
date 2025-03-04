@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+.container h2 {
+font-family: 'Times New Roman', Times, serif;
+}
+
+  header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+  }
+  
+  header h1 {
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+  
+  section {
+    padding: 40px 0;
+    background-color: #fff;
+    margin-bottom: 20px;
+  }
+  
+  section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  ul li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+  
+  .project {
+    margin-bottom: 20px;
+  }
+  
+  .project h3 {
+    font-size: 1.5rem;
+  }
+  
+  form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  form button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1.1rem;
+  }
+  
+  form button:hover {
+    background-color: #555;
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      width: 90%;
+    }
+  
+    nav ul {
+      flex-direction: column;
+    }
+  }
+
+  /* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+  }
+  
+  /* Navigation bar styles */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+  }
+  
+  .navbar .logo h1 {
+    color: white;
+    font-size: 1.8rem;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+  }
+  
+  .nav-links li {
+    margin-left: 20px;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+  }
+  
+  .nav-links li a:hover {
+    color: #ddd;
+  }
+  
+  /* Hamburger icon */
+  .hamburger {
+    display: none;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+  }
+  
+  /* Mobile styles */
+  @media (max-width: 768px) {
+    .nav-links {
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background-color: #333;
+      flex-direction: column;
+      align-items: center;
+      display: none;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  
+    .nav-links li {
+      margin: 15px 0;
+    }
+  
+    .hamburger {
+      display: block;
+    }
+  }
+
+  .mini-box {
+    width: 150px; /* Adjust as needed */
+    padding: 10px;
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+    text-align: center;
+    font-family: sans-serif; /* Or any other font */
+    margin: 10px; /* Add margin for spacing */
+    display: inline-block;/* Allows multiple boxes on one line */
+  }
+  
+  .mini-box h3 {
+    margin-top: 0; /* Remove default top margin from h3 */
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .mini-box p {
+    font-size: 12px;
+  }
+
+  .mini-box1 {
+    width: 325px; /* Adjust as needed */
+    padding: 10px;
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+    text-align: center;
+    font-family: sans-serif; /* Or any other font */
+    margin: 10px; /* Add margin for spacing */
+    display: inline-block;/* Allows multiple boxes on one line */
+  }
+  
+  .mini-box1 h3 {
+    margin-top: 0; /* Remove default top margin from h3 */
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .mini-box1 p {
+    font-size: 12px;
+  }
+
