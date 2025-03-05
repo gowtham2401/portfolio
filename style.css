@@ -28,6 +28,7 @@ font-family: 'Times New Roman', Times, serif;
   header h1 {
     text-align: center;
     font-size: 2.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
   }
   
   nav ul {
@@ -55,6 +56,7 @@ font-family: 'Times New Roman', Times, serif;
   section h2 {
     font-size: 2rem;
     margin-bottom: 20px;
+    font-family: 'Times New Roman', Times, serif;
   }
   
   section p {
@@ -240,3 +242,74 @@ font-family: 'Times New Roman', Times, serif;
     font-size: 12px;
   }
 
+ /* From Uiverse.io by McHaXYT */ 
+.button {
+  padding: 15px 20px;
+  border: none;
+  outline: none;
+  background-color: #151515;
+  color: #eee;
+  border-radius: 7px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease-out;
+}
+
+.button:hover {
+  transform: translateY(-3px);
+}
+
+.button-span {
+  color: #aaa;
+}
+
+.black-button {
+  background-color: #000;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+.black-button:hover {
+  background-color: #333;
+  transform: scale(1.05);
+}
+.black-button:active {
+  background-color: #555;
+  transform: scale(0.95);
+}
+
+.container2 {
+  max-width: 800px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h12 {
+  text-align: center;
+  color: #333;
+}
+.post2 {
+  margin-bottom: 20px;
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+}
+.post2 h2 {
+  color: #007BFF;
+}
+.post2 p {
+  color: #555;
+}
+.read-more2 {
+  text-decoration: none;
+  color: #007BFF;
+  font-weight: bold;
+}
+.read-more2:hover {
+  text-decoration: underline;
+}
