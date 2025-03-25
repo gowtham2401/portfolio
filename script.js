@@ -15,20 +15,17 @@ document.getElementById('contactForm').addEventListener('submit', function(event
     }
   });
 
-  // Get references to the hamburger icon and the nav links
 const hamburger = document.getElementById('hamburger');
 const navLinks = document.querySelector('.nav-links');
 
-// Add a click event listener to the hamburger icon
 hamburger.addEventListener('click', () => {
-  // Toggle the "active" class on the nav-links to show or hide them
+
   navLinks.classList.toggle('active');
 });
 
-//scroll
 document.addEventListener('scroll', function() {
   const scrollButton = document.querySelector('.scroll-to-top');
-  if (window.pageYOffset > 100) { // Show the button after scrolling down 100px
+  if (window.pageYOffset > 100) { 
     scrollButton.style.display = 'block';
   } else {
     scrollButton.style.display = 'none';
