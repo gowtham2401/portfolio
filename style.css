@@ -79,6 +79,7 @@ font-family: 'Times New Roman', Times, serif;
   
   .project h3 {
     font-size: 1.5rem;
+    font-family: 'Times New Roman', Times, serif;
   }
   
   form input, form textarea {
@@ -199,7 +200,10 @@ font-family: 'Times New Roman', Times, serif;
   }
 
   .mini-box {
-    width: 150px; /* Adjust as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px; /* Adjust as needed */
     padding: 10px;
     border: 1px solid black;
     background-color: white;
@@ -218,18 +222,6 @@ font-family: 'Times New Roman', Times, serif;
   
   .mini-box p {
     font-size: 12px;
-  }
-
-  .mini-box1 {
-    width: 325px; /* Adjust as needed */
-    padding: 10px;
-    border: 1px solid black;
-    background-color: white;
-    color: black;
-    text-align: center;
-    font-family: sans-serif; /* Or any other font */
-    margin: 10px; /* Add margin for spacing */
-    display: inline-block;/* Allows multiple boxes on one line */
   }
   
   .mini-box1 h3 {
@@ -312,4 +304,39 @@ h12 {
 }
 .read-more2:hover {
   text-decoration: underline;
+}
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: white;
+  color: white;
+  padding: 0.1;
+  border-radius: 50%; /* Make it circular */
+  text-decoration: none; /* Remove underline */
+  font-size: 1cap;
+  cursor: pointer;
+  display: none; /* Initially hide the button */
+}
+
+/* Optional: Add a1 hover effect */
+.scroll-to-top:hover {
+  background-color: white;
+}
+
+/* Optional: Add a fade-in effect when scrolling down */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Show the button when scrolling down */
+body {
+  height: 2000px; /* Make the page long enough to scroll */
+}
+
+/* Make the button visible when scrolling down */
+.scroll-to-top {
+  animation: fadeIn 0.5s; /* Add a fade-in animation */
 }

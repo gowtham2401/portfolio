@@ -24,3 +24,22 @@ hamburger.addEventListener('click', () => {
   // Toggle the "active" class on the nav-links to show or hide them
   navLinks.classList.toggle('active');
 });
+
+//scroll
+document.addEventListener('scroll', function() {
+  const scrollButton = document.querySelector('.scroll-to-top');
+  if (window.pageYOffset > 100) { // Show the button after scrolling down 100px
+    scrollButton.style.display = 'block';
+  } else {
+    scrollButton.style.display = 'none';
+  }
+});
+
+// Smooth scrolling to top
+document.querySelector('.scroll-to-top').addEventListener('click', function(event) {
+  event.preventDefault();
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+});
